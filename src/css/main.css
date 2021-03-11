@@ -694,11 +694,14 @@ img {
 
 .home-banner {
   height: 90vh;
-  background-image: url(../images/home/Home-respon.svg);
+  background-image: url(../images/home/Home.png);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 375px) {
+    .home-banner {
+      background-image: url(../images/home/Home-respon.svg); } }
   .home-banner img {
     width: 905px;
     height: 320px; }
