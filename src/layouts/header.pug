@@ -4,6 +4,8 @@
          img(class="menu-big" src="images/home/logo.svg")
          img(class="menu-bar" src="images/home/footer.svg")
       .header__menu
+         .menu-logo 
+               img(src="images/home/logo.svg", alt="")
          ul.header__menu-list            
             li.list__item
                a#home-icon(href="index.html")
@@ -17,14 +19,15 @@
             li.list__item
                a(href="contact.html")#contact-icon
                   | Contact
-            .header__language
-               #outerContainer
-                  #container1.select-left
-                     #item1
-                     .left
-                        span Vi
-                     .right
-                        span En
+         .header__language
+            #outerContainer
+               #container1.select-left
+                  #item1
+                  .left
+                     span Vi
+                  .right
+                     span En
+            
       .header__language
          #outerContainer
             #container.select-left
@@ -34,5 +37,5 @@
                .right
                   span En
       .header__menu-icon 
-         img(src="images/home/menu-bar.svg", alt="")
+         img#menu-icon(src="images/home/menu-bar.svg", alt="")
 
