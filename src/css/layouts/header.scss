@@ -14,6 +14,9 @@
         height: 10vh;
         align-items: center;
         .header__menu {
+            .menu-logo {
+                display: none;
+            }
             &-list {
                 display: flex;
                 li {
@@ -44,9 +47,9 @@
                         color: #733528;
                     }
                 }
-                .header__language {
-                    display: none;
-                }
+            }
+            .header__language {
+                display: none;
             }
         }
         .header__language {
@@ -273,6 +276,9 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                .menu-logo {
+                    display: block;
+                }
                 .header__language {
                     display: block;
                 }

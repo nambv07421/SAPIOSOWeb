@@ -54,6 +54,8 @@ img {
     justify-content: space-between;
     height: 10vh;
     align-items: center; }
+    .header .container-fluid .header__menu .menu-logo {
+      display: none; }
     .header .container-fluid .header__menu-list {
       display: flex; }
       .header .container-fluid .header__menu-list li {
@@ -78,8 +80,8 @@ img {
             left: -24px; }
         .header .container-fluid .header__menu-list li .item-active {
           color: #733528; }
-      .header .container-fluid .header__menu-list .header__language {
-        display: none; }
+    .header .container-fluid .header__menu .header__language {
+      display: none; }
     .header .container-fluid .header__language #outerContainer {
       display: block; }
     .header .container-fluid .header__language #container {
@@ -261,6 +263,8 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
+        .header .container-fluid .header__menu .menu-logo {
+          display: block; }
         .header .container-fluid .header__menu .header__language {
           display: block; }
         .header .container-fluid .header__menu .header__language #outerContainer {
@@ -559,6 +563,8 @@ img {
     justify-content: space-between;
     height: 10vh;
     align-items: center; }
+    .header .container-fluid .header__menu .menu-logo {
+      display: none; }
     .header .container-fluid .header__menu-list {
       display: flex; }
       .header .container-fluid .header__menu-list li {
@@ -583,8 +589,8 @@ img {
             left: -24px; }
         .header .container-fluid .header__menu-list li .item-active {
           color: #733528; }
-      .header .container-fluid .header__menu-list .header__language {
-        display: none; }
+    .header .container-fluid .header__menu .header__language {
+      display: none; }
     .header .container-fluid .header__language #outerContainer {
       display: block; }
     .header .container-fluid .header__language #container {
@@ -766,6 +772,8 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
+        .header .container-fluid .header__menu .menu-logo {
+          display: block; }
         .header .container-fluid .header__menu .header__language {
           display: block; }
         .header .container-fluid .header__menu .header__language #outerContainer {
