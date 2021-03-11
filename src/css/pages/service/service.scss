@@ -1,0 +1,84 @@
+.service {
+    height: 100%;
+    .service-banner {
+        background-color: #733528;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 675px;
+            position: relative;
+        }
+        .service-button {
+            position: absolute;
+            flex-direction: column;
+            display: flex;
+            margin-top: 320px;
+            margin-left: 670px;
+
+            .button-1 {
+                width: 360px;
+                height: 90px;
+                border-radius: 100px;
+                background-color: #995b4e;
+                border: 0.3px solid #fff;
+                font-size: 56px;
+                color: #fff;
+                letter-spacing: 22px;
+                font-weight: 300;
+            }
+            .button-2 {
+                width: 360px;
+                height: 80px;
+                border-radius: 100px;
+                background-color: #995b4e;
+                border: 0.3px solid #fff;
+                font-size: 30px;
+                color: #fff;
+                letter-spacing: 22px;
+                font-weight: 300;
+                margin-top: 15px;
+            }
+        }
+    }
+    .service-item {
+        height: 100vh;
+        border-bottom: 0.3px solid #733528;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container-custom {
+            max-width: 80% !important;
+        }
+        .service-item-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            margin-left: 80px;
+
+            img {
+                width: 300px;
+            }
+            p {
+                display: block;
+                font-size: 24px;
+                color: #000;
+                margin-top: 25px;
+            }
+        }
+        .service-item-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            align-items: center;
+
+            img {
+                width: 680px;
+            }
+        }
+    }
+}
