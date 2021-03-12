@@ -54,7 +54,7 @@
                 display: block;
             }
         }
-        @media screen and(max-width:1919px) and (min-width: 1366px){
+        @media screen and(max-width:1919px) and (min-width: 1280px){
             margin-top: 40px;
         }   
         
@@ -64,7 +64,7 @@
         .about-content {
             position: absolute;
             width: 50%;
-            @media screen and(max-width:1919px) and (min-width: 1366px){
+            @media screen and(max-width:1919px) and (min-width: 1280px){
                 width: 63%;
             }
             @media screen and(max-width:1024px){
