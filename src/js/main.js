@@ -14,9 +14,9 @@
   });
 
 }(jQuery));
-function menuDot() {
-  let arr = window.location.href.split('/');
-  let page = arr[arr.length - 1];
+let arr = window.location.href.split('/');
+let page = arr[arr.length - 1];
+function menuDot() { 
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
   }
@@ -28,6 +28,8 @@ function menuDot() {
   }
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-logo").src = "images/home/logo.svg"
+    document.getElementById("menu-icon").src = "images/home/menu-bar-contact.png"
   }
   else {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
@@ -106,7 +108,12 @@ function toogleMenu() {
     }
     else{
       setTimeout(function() {
-        document.getElementById("menu-icon").src="images/home/menu-bar.svg";
+        if (page == 'contact.html'){
+          document.getElementById("menu-icon").src="images/home/menu-bar-contact.png";
+        }
+        else{ 
+          document.getElementById("menu-icon").src="images/home/menu-bar.svg";  
+        }
       }, 300);
     }
 
@@ -128,6 +135,23 @@ function toogleMenu() {
   })
 }
 toogleMenu();
-
+function stickyMenu() {
+  let scrollTrigger = 60;
+  window.onscroll = function() {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+      if (page == 'contact.html'){
+        document.getElementById("header").classList.add('sticky-menu-contact');
+      }
+      else{
+        document.getElementById("header").classList.add('sticky-menu');
+      }
+    } else {
+      document.getElementById("header").classList.remove('sticky-menu');
+      document.getElementById("header").classList.remove('sticky-menu-contact');
+    }
+};
+}
+stickyMenu()
 
 

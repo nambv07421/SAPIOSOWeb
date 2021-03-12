@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="./css/main.css" attr>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <div class="container-fluid">
-        <div class="header__logo"><img class="menu-big" src="images/home/logo.svg"><img class="menu-bar" src="images/home/footer.svg"></div>
+        <div class="header__logo"><img class="menu-big" src="images/home/logo.svg"><img class="menu-bar" id="header-logo" src="images/home/footer.svg"></div>
         <div class="header__menu">
           <div class="menu-logo"> <img src="images/home/logo.svg" alt=""></div>
           <ul class="header__menu-list">           
@@ -48,10 +48,14 @@
         <div class="header__menu-icon"> <img id="menu-icon" src="images/home/menu-bar.svg" alt=""></div>
       </div>
     </div>
-    <div class="contact"> 
+    <div class="contact">
+      <div class="contact-bg"><img src="images/contact/contact-bg-mobile.png" alt=""></div>
       <div class="container-custom-contact"> 
         <div class="row row-custom"> 
-          <div class="col-md-6 col-12 footer-right d-flex justify-content-start align-items-center">
+          <div class="col-lg-6 col-12 footer-right d-flex justify-content-center align-items-start flex-column">
+            <div class="title"><img src="images/contact/contact-title.png" alt=""></div>
+            <div class="contact-map-mobile"><img src="images/contact/map.svg" alt=""></div>
+            <div class="contact-logo"> <img src="images/home/footer.svg" alt=""></div>
             <ul> 
               <li class="footer__item"><a class="footer__item-phone" href="index.html"><img src="images/home/phone.svg" alt="">
                   <p>0793250365</p></a></li>
@@ -61,7 +65,7 @@
                   <p>N03-T7, Ngoai Giao Doan, Xuan Tao, Tu Liem, Ha Noi</p></a></li>
             </ul>
           </div>
-          <div class="col-md-6 col-12">
+          <div class="col-lg-6 col-12">
             <div class="contact-map"><img src="images/contact/map.svg" alt=""></div>
           </div>
         </div>
