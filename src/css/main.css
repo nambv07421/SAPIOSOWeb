@@ -45,7 +45,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 6px -3px #000; }
   @media screen and (max-width: 375px) {
     .header {
       background-color: #7a0000; } }
@@ -392,7 +393,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 6px -3px #000; }
   @media screen and (max-width: 375px) {
     .header {
       background-color: #7a0000; } }
@@ -721,12 +723,26 @@ img {
     .service .service-banner img {
       width: 675px;
       position: relative; }
+      @media screen and (min-width: 1300px) and (max-width: 1600px) {
+        .service .service-banner img {
+          width: 510px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1299px) {
+        .service .service-banner img {
+          width: 490px; } }
     .service .service-banner .service-button {
       position: absolute;
       flex-direction: column;
       display: flex;
       margin-top: 320px;
       margin-left: 670px; }
+      @media screen and (min-width: 1300px) and (max-width: 1600px) {
+        .service .service-banner .service-button {
+          margin-top: 240px;
+          margin-left: 520px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1299px) {
+        .service .service-banner .service-button {
+          margin-top: 200px;
+          margin-left: 520px; } }
       .service .service-banner .service-button .button-1 {
         width: 360px;
         height: 90px;
@@ -737,6 +753,16 @@ img {
         color: #fff;
         letter-spacing: 22px;
         font-weight: 300; }
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+          .service .service-banner .service-button .button-1 {
+            width: 320px;
+            height: 69px;
+            font-size: 38px; } }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .service .service-banner .service-button .button-1 {
+            width: 300px;
+            height: 59px;
+            font-size: 32px; } }
       .service .service-banner .service-button .button-2 {
         width: 360px;
         height: 80px;
@@ -747,7 +773,15 @@ img {
         color: #fff;
         letter-spacing: 22px;
         font-weight: 300;
-        margin-top: 15px; }
+        margin-top: 15px;
+        width: 300px;
+        height: 50px;
+        font-size: 20px; }
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+          .service .service-banner .service-button .button-2 {
+            width: 320px;
+            height: 53px;
+            font-size: 20px; } }
   .service .service-item {
     height: 100vh;
     border-bottom: 0.3px solid #733528;
@@ -762,13 +796,28 @@ img {
       justify-content: center;
       height: 80vh;
       margin-left: 80px; }
+      @media screen and (min-width: 1024px) and (max-width: 1299px) {
+        .service .service-item .service-item-text {
+          margin-left: 40px; } }
       .service .service-item .service-item-text img {
         width: 300px; }
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+          .service .service-item .service-item-text img {
+            width: 250px; } }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .service .service-item .service-item-text img {
+            width: 200px; } }
       .service .service-item .service-item-text p {
         display: block;
         font-size: 24px;
         color: #000;
         margin-top: 25px; }
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+          .service .service-item .service-item-text p {
+            font-size: 18px; } }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .service .service-item .service-item-text p {
+            font-size: 17px; } }
     .service .service-item .service-item-img {
       display: flex;
       flex-direction: column;
@@ -777,6 +826,12 @@ img {
       align-items: center; }
       .service .service-item .service-item-img img {
         width: 680px; }
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+          .service .service-item .service-item-img img {
+            width: 570px; } }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .service .service-item .service-item-img img {
+            width: 450px; } }
 
 .about {
   background-image: url("../images/about/AboutUs.png");
@@ -808,19 +863,36 @@ img {
         justify-content: center;
         align-items: center;
         height: 100%; }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .about .about-item-bg .about-content .about-content-item .about-center-img {
+            margin-left: -110px; } }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+          .about .about-item-bg .about-content .about-content-item .about-center-text {
+            margin-left: 14px; } }
         .about .about-item-bg .about-content .about-content-item p {
           margin-left: 60px;
           font-size: 24px;
           color: #808080;
           line-height: 45px; }
+          @media screen and (min-width: 1024px) and (max-width: 1299px) {
+            .about .about-item-bg .about-content .about-content-item p {
+              margin-left: -30px;
+              font-size: 18px;
+              color: #808080;
+              line-height: 29px; } }
         .about .about-item-bg .about-content .about-content-item img {
           margin-left: 90px; }
+          @media screen and (min-width: 1024px) and (max-width: 1299px) {
+            .about .about-item-bg .about-content .about-content-item img {
+              margin-left: 202px;
+              width: 300px; } }
 
 .contact {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 1px 0 15px 2px #000; }
   .contact .container-custom-contact {
     width: 81% !important;
     background-image: url(../images/contact/bg-1.svg);
@@ -829,6 +901,9 @@ img {
     justify-content: center;
     align-items: center;
     background-size: cover; }
+    @media screen and (min-width: 1024px) and (max-width: 1600px) {
+      .contact .container-custom-contact {
+        background-repeat: round; } }
   .contact .row-custom {
     width: 90%; }
   .contact .footer-right .footer__item .footer__item-phone {

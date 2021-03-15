@@ -10,6 +10,12 @@
         img {
             width: 675px;
             position: relative;
+            @media screen and(min-width:1300px) and(max-width:1600px) {
+                width: 510px;
+            }
+            @media screen and(min-width:1024px) and(max-width:1299px) {
+                width: 490px;
+            }
         }
         .service-button {
             position: absolute;
@@ -17,6 +23,14 @@
             display: flex;
             margin-top: 320px;
             margin-left: 670px;
+            @media screen and(min-width:1300px) and(max-width:1600px) {
+                margin-top: 240px;
+                margin-left: 520px;
+            }
+            @media screen and(min-width:1024px) and(max-width:1299px) {
+                margin-top: 200px;
+                margin-left: 520px;
+            }
 
             .button-1 {
                 width: 360px;
@@ -28,6 +42,16 @@
                 color: #fff;
                 letter-spacing: 22px;
                 font-weight: 300;
+                @media screen and(min-width:1300px) and(max-width:1600px) {
+                    width: 320px;
+                    height: 69px;
+                    font-size: 38px;
+                }
+                @media screen and(min-width:1024px) and(max-width:1299px) {
+                    width: 300px;
+                    height: 59px;
+                    font-size: 32px;
+                }
             }
             .button-2 {
                 width: 360px;
@@ -40,6 +64,14 @@
                 letter-spacing: 22px;
                 font-weight: 300;
                 margin-top: 15px;
+                @media screen and(min-width:1300px) and(max-width:1600px) {
+                    width: 320px;
+                    height: 53px;
+                    font-size: 20px;
+                }
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
             }
         }
     }
@@ -58,15 +90,30 @@
             justify-content: center;
             height: 80vh;
             margin-left: 80px;
+            @media screen and(min-width:1024px) and(max-width:1299px) {
+                margin-left: 40px;
+            }
 
             img {
                 width: 300px;
+                @media screen and(min-width:1300px) and(max-width:1600px) {
+                    width: 250px;
+                }
+                @media screen and(min-width:1024px) and(max-width:1299px) {
+                    width: 200px;
+                }
             }
             p {
                 display: block;
                 font-size: 24px;
                 color: #000;
                 margin-top: 25px;
+                @media screen and(min-width:1300px) and(max-width:1600px) {
+                    font-size: 18px;
+                }
+                @media screen and(min-width:1024px) and(max-width:1299px) {
+                    font-size: 17px;
+                }
             }
         }
         .service-item-img {
@@ -78,6 +125,12 @@
 
             img {
                 width: 680px;
+                @media screen and(min-width:1300px) and(max-width:1600px) {
+                    width: 570px;
+                }
+                @media screen and(min-width:1024px) and(max-width:1299px) {
+                    width: 450px;
+                }
             }
         }
     }

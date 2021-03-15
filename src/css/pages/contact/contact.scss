@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 0 15px 2px #000;
     .container-custom-contact {
         width: 81% !important;
         background-image: url(../images/contact/bg-1.svg);
@@ -11,6 +12,9 @@
         justify-content: center;
         align-items: center;
         background-size: cover;
+        @media screen and(min-width:1024px) and(max-width:1600px) {
+            background-repeat: round;
+        }
     }
     .row-custom {
         width: 90%;
