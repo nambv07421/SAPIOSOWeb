@@ -34,6 +34,9 @@
             display: flex;
             margin-top: 320px;
             margin-left: 670px;
+            button{
+                outline: none;
+            }
             @media screen and(max-width:1024px){
                 margin-top: 220px;
                 margin-left: 525px;
