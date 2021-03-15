@@ -14,9 +14,9 @@
   });
 
 }(jQuery));
-function menuDot() {
-  let arr = window.location.href.split('/');
-  let page = arr[arr.length - 1];
+let arr = window.location.href.split('/');
+let page = arr[arr.length - 1];
+function menuDot() { 
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
   }
@@ -28,6 +28,8 @@ function menuDot() {
   }
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-logo").src = "images/home/logo.svg"
+    document.getElementById("menu-icon").src = "images/home/menu-bar-contact.png"
   }
   else {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
@@ -86,17 +88,35 @@ function tiltcustom() {
 }
 tiltcustom();
 
+let openMenu = false;
+
 function toogleMenu() {
   let menuButton = document.querySelector(".header__menu-icon ");
   let menu = document.querySelector(".header__menu");
   let closeBtn = document.querySelector(".close-menu");
   let body = document.getElementsByTagName("body")[0];
   let bodyOverlay = document.querySelector(".body-overlay");
-
   menuButton.addEventListener("click", () => {
+    openMenu = !openMenu;
     menu.classList.toggle('set-width')
     body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     menuButton.classList.toggle('toggle')
+    console.log(openMenu);
+    if(openMenu==true) {
+      document.getElementById("menu-icon").src="images/home/close-menubar.svg";
+      
+    }
+    else{
+      setTimeout(function() {
+        if (page == 'contact.html'){
+          document.getElementById("menu-icon").src="images/home/menu-bar-contact.png";
+        }
+        else{ 
+          document.getElementById("menu-icon").src="images/home/menu-bar.svg";  
+        }
+      }, 300);
+    }
+
     // bodyOverlay.style.display = "block";
   });
   // window.addEventListener('click', function(e){
@@ -109,10 +129,29 @@ function toogleMenu() {
     if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
       menu.classList.remove('set-width')
       menuButton.classList.remove('toggle')
+      openMenu = false;
+      document.getElementById("menu-icon").src="images/home/menu-bar.svg";
     }
   })
 }
 toogleMenu();
-
+function stickyMenu() {
+  let scrollTrigger = 60;
+  window.onscroll = function() {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+      if (page == 'contact.html'){
+        document.getElementById("header").classList.add('sticky-menu-contact');
+      }
+      else{
+        document.getElementById("header").classList.add('sticky-menu');
+      }
+    } else {
+      document.getElementById("header").classList.remove('sticky-menu');
+      document.getElementById("header").classList.remove('sticky-menu-contact');
+    }
+};
+}
+stickyMenu()
 
 
