@@ -100,7 +100,7 @@ img {
         color: #fff; }
       .header .container-fluid .header__language #container.select-right .right span {
         opacity: 1;
-        color: #000; }
+        color: #fff; }
       .header .container-fluid .header__language #container #item {
         position: relative;
         width: 56px;
@@ -350,7 +350,7 @@ img {
           width: 130px;
           height: 30px;
           background-color: transparent;
-          border: 1px solid #7A0000;
+          border: 1px solid #7a0000;
           margin: 0;
           border-radius: 36px;
           touch-action: none;
@@ -376,7 +376,7 @@ img {
               width: 100%;
               border-radius: 15px;
               height: 100%;
-              background-color: #7A0000;
+              background-color: #7a0000;
               content: ""; }
           .header .container-fluid .header__menu .header__language #container1 .item-right {
             transform: translateX(61px); }
@@ -398,7 +398,7 @@ img {
               font-size: 12px;
               pointer-events: none;
               user-select: none;
-              color: #2D2D2D;
+              color: #2d2d2d;
               transition: all 0.2s ease;
               font-weight: 500;
               font-weight: bold; }
@@ -418,7 +418,7 @@ img {
               font-size: 12px;
               pointer-events: none;
               user-select: none;
-              color: #2D2D2D;
+              color: #2d2d2d;
               transition: all 0.2s ease;
               font-weight: bold; }
         .header .container-fluid .header__menu-list {
@@ -466,7 +466,7 @@ img {
     width: 103px;
     height: 26px; }
   .sticky-menu {
-    background-color: #7A0000; }
+    background-color: #7a0000; }
   .sticky-menu-contact {
     background-color: white; } }
 
@@ -630,7 +630,7 @@ img {
         color: #fff; }
       .header .container-fluid .header__language #container.select-right .right span {
         opacity: 1;
-        color: #000; }
+        color: #fff; }
       .header .container-fluid .header__language #container #item {
         position: relative;
         width: 56px;
@@ -880,7 +880,7 @@ img {
           width: 130px;
           height: 30px;
           background-color: transparent;
-          border: 1px solid #7A0000;
+          border: 1px solid #7a0000;
           margin: 0;
           border-radius: 36px;
           touch-action: none;
@@ -906,7 +906,7 @@ img {
               width: 100%;
               border-radius: 15px;
               height: 100%;
-              background-color: #7A0000;
+              background-color: #7a0000;
               content: ""; }
           .header .container-fluid .header__menu .header__language #container1 .item-right {
             transform: translateX(61px); }
@@ -928,7 +928,7 @@ img {
               font-size: 12px;
               pointer-events: none;
               user-select: none;
-              color: #2D2D2D;
+              color: #2d2d2d;
               transition: all 0.2s ease;
               font-weight: 500;
               font-weight: bold; }
@@ -948,7 +948,7 @@ img {
               font-size: 12px;
               pointer-events: none;
               user-select: none;
-              color: #2D2D2D;
+              color: #2d2d2d;
               transition: all 0.2s ease;
               font-weight: bold; }
         .header .container-fluid .header__menu-list {
@@ -996,7 +996,7 @@ img {
     width: 103px;
     height: 26px; }
   .sticky-menu {
-    background-color: #7A0000; }
+    background-color: #7a0000; }
   .sticky-menu-contact {
     background-color: white; } }
 
@@ -1393,7 +1393,8 @@ img {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 1px 0 15px 2px #000; }
   @media screen and (max-width: 576px) and (min-width: 320px) {
     .contact {
       background: #ffffff; } }
