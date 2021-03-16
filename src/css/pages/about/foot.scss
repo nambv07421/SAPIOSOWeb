@@ -29,6 +29,9 @@
         @media screen and(max-width: 768px) and (min-width: 576px){
             height: 60vh;
         }
+        @media screen and(max-height: 736px) {
+            height: unset;
+        }
     }
     .about-item-bg {
         display: flex;
@@ -46,6 +49,9 @@
             margin: 25px;
             @media screen and(max-height:700px) {
                 margin: 40px 25px;
+            }
+            @media screen and(max-height:736px) and (min-width: 414px) {
+                margin: 35px;
             }
             .box{
                 display: none;
