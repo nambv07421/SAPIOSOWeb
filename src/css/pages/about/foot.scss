@@ -1,67 +1,130 @@
 .about {
     background-image: url("../images/about/AboutUs.png");
     height: 100%;
+    @media screen and(max-width: 768px) and (min-width: 320px) {
+        background-image: url(../images/home/Home-respon.svg);
+        background-position: center;
+        background-size: cover;
+    }
     .about-item {
         height: 100vh;
         width: 100%;
         background-size: cover;
+        @media screen and(max-width: 768px) and (min-width: 576px) {
+            height: 60vh;
+        }
     }
     .about-item1 {
         height: 100vh;
         width: 100%;
         background-size: cover;
+        @media screen and(max-width: 768px) and (min-width: 576px) {
+            height: 60vh;
+        }
     }
     .about-item2 {
         height: 100vh;
         width: 100%;
         background-size: cover;
+        @media screen and(max-width: 768px) and (min-width: 576px) {
+            height: 60vh;
+        }
     }
     .about-item-bg {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
+        @media screen and(max-width: 768px) and (min-width: 576px) {
+            height: 60vh;
+        }
+        .box-mobile {
+            display: none;
+        }
+        @media screen and(max-width:576px) and (min-width: 320px) {
+            width: 100%;
+            margin: 25px;
+            @media screen and(max-height:700px) {
+                margin: 40px 25px;
+            }
+            .box {
+                display: none;
+            }
+            .box-mobile {
+                display: block;
+            }
+        }
+        @media screen and(max-width:1919px) and (min-width: 1280px) {
+            margin-top: 40px;
+        }
         img {
             position: relative;
         }
         .about-content {
             position: absolute;
             width: 50%;
+            @media screen and(max-width:1919px) and (min-width: 1280px) {
+                width: 63%;
+            }
+            @media screen and(max-width:1024px) {
+                width: 70%;
+            }
+            @media screen and(max-width:576px) and (min-width: 320px) {
+                width: 63%;
+            }
             .about-content-item {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100%;
-                .about-center-img {
-                    @media screen and(min-width:1024px) and(max-width:1299px) {
-                        margin-left: -110px;
-                    }
-                }
-                .about-center-text {
-                    @media screen and(min-width:1024px) and(max-width:1299px) {
-                        margin-left: 14px;
-                    }
-                }
                 p {
                     margin-left: 60px;
                     font-size: 24px;
                     color: #808080;
                     line-height: 45px;
-                    @media screen and(min-width:1024px) and(max-width:1299px) {
-                        margin-left: -30px;
-                        font-size: 18px;
-                        color: #808080;
-                        line-height: 29px;
+                    @media screen and(max-width:1024px) {
+                        font-size: 16px;
+                        margin: 0;
+                        line-height: 1.7;
+                        text-align: justify;
+                    }
+                    @media screen and(max-width:576px) and (min-width: 320px) {
+                        font-size: 16px;
+                        margin: 0;
+                        line-height: 1.8;
+                        text-align: center;
                     }
                 }
                 img {
                     margin-left: 90px;
-                    @media screen and(min-width:1024px) and(max-width:1299px) {
-                        margin-left: 202px;
-                        width: 300px;
+                    @media screen and(max-width:768px) {
+                        margin-left: 0;
+                    }
+                    @media screen and(max-width:576px) and (min-width: 320px) {
+                        width: 183px;
+                        height: 183px;
+                        margin: 0;
+                        position: absolute;
+                        margin-bottom: 100px;
                     }
                 }
             }
+            .content-text {
+                @media screen and(max-width:576px) and (min-width: 320px) {
+                    position: relative;
+                    top: 60%;
+                }
+            }
+        }
+    }
+    .custom-order-2 {
+        @media screen and(max-width: 576px) and (min-width: 320px) {
+            order: 2;
+        }
+    }
+    .custom-order-1 {
+        @media screen and(max-width: 576px) and (min-width: 320px) {
+            order: 1;
         }
     }
 }
