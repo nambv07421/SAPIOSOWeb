@@ -1,6 +1,5 @@
 .header {
-    background-color: #fff;
-    position: fixed;
+    background-color: #733528;
     width: 100%;
     left: 0;
     top: 0;
@@ -8,6 +7,7 @@
     @media screen and(max-width:768px) and (min-width: 320px) {
         background-color: transparent;
         z-index: 999;
+        position: fixed;
     }
     .container-fluid {
         display: flex;
@@ -25,7 +25,7 @@
                     a {
                         display: flex;
                         align-items: center;
-                        color: #505050;
+                        color: #fff;
                         img {
                             margin-right: 12px;
                         }
@@ -37,7 +37,7 @@
                             width: 90px;
                             height: 6px;
                             border-radius: 0px 0px 10px 10px;
-                            background-color: #733528;
+                            background-color: #fff;
                             content: "";
                             top: 100%;
                             margin-top: -60px;
@@ -45,7 +45,7 @@
                         }
                     }
                     .item-active {
-                        color: #733528;
+                        color: #fff;
                     }
                 }
             }
@@ -61,7 +61,7 @@
                 position: relative;
                 width: 130px;
                 height: 30px;
-                background-color: transparent;
+                background-color: #fff;
                 border: 1px solid #733528;
                 margin: 0;
                 border-radius: 36px;
@@ -491,6 +491,9 @@
                         padding-bottom: 20px;
                         a {
                             font-size: 16px;
+                            color: #505050;
+                            font-weight: 600;
+
                             // justify-content: center;
                         }
                         .menu-dot::after {
@@ -501,6 +504,10 @@
                             width: 146px;
                             height: 2px;
                             left: unset;
+                            background-color: #733528;
+                        }
+                        .item-active {
+                            color: #733528;
                         }
                     }
                 }
@@ -556,4 +563,7 @@
     .menu-bar {
         display: none;
     }
+}
+.header-fixed {
+    position: fixed !important;
 }

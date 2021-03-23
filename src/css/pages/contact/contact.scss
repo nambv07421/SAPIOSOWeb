@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #733528;
     box-shadow: 1px 0 15px 2px #000;
     @media screen and(max-width:576px) and (min-width: 320px) {
         background: #ffffff;
@@ -20,7 +21,7 @@
     }
     .container-custom-contact {
         width: 81% !important;
-        background-image: url(../images/contact/bg-1.svg);
+        background-image: url(../images/contact/contact-main.png);
         height: 620px;
         display: flex;
         justify-content: center;
@@ -85,7 +86,7 @@
                 }
                 p {
                     font-size: 21px;
-                    color: #fff;
+                    color: #733528;
                     @media screen and(max-width:576px) and (min-width: 320px) {
                         font-size: 12px;
                         font-family: "Open Sans";

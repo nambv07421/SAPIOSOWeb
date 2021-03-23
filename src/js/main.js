@@ -19,6 +19,7 @@ let page = arr[arr.length - 1];
 function menuDot() {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'service.html') {
     document.getElementById("service-icon").classList.add('menu-dot', 'item-active')
@@ -28,6 +29,7 @@ function menuDot() {
   }
   else if (page == 'porfolio.html') {
     document.getElementById("porfolio-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot', 'item-active')
