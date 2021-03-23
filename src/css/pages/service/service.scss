@@ -139,12 +139,17 @@
             @media screen and(max-width:1080px) and (min-width: 320px) {
                 height: unset;
                 margin-left: 0;
+
             }
             img {
                 width: 300px;
                 @media screen and(max-width:768px) and (min-width: 320px) {
                     width: 188px;
                     height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
                 }
             }
             p {
@@ -168,9 +173,10 @@
                 height: unset;
             }
             img {
-                width: 680px;
+                width: 880px;
                 @media screen and(min-width: 1280px) and (max-width: 1919px) {
                     width: 570px;
+                    margin: 0 30px;
                 }
                 @media screen and(max-width: 1024px) {
                     width: 450px;
