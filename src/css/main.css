@@ -1086,7 +1086,8 @@ img {
       background-image: url(../images/home/Home-respon.svg); } }
   .home-banner img {
     width: 905px;
-    height: 320px; }
+    height: 320px;
+    object-fit: contain; }
     @media screen and (max-width: 375px) {
       .home-banner img {
         width: 292px;
