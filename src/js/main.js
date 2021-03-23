@@ -16,15 +16,18 @@
 }(jQuery));
 let arr = window.location.href.split('/');
 let page = arr[arr.length - 1];
-function menuDot() { 
+function menuDot() {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
   }
-  else if (page == 'service.html' || page == 'packageapp.html' || page == 'enterpriseapp.html' || page == 'cloud-doctor.html' || page == 'time-tracker.html') {
+  else if (page == 'service.html') {
     document.getElementById("service-icon").classList.add('menu-dot', 'item-active')
   }
   else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot', 'item-active')
+  }
+  else if (page == 'porfolio.html') {
+    document.getElementById("porfolio-icon").classList.add('menu-dot', 'item-active')
   }
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot', 'item-active')
@@ -102,17 +105,17 @@ function toogleMenu() {
     body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     menuButton.classList.toggle('toggle')
     console.log(openMenu);
-    if(openMenu==true) {
-      document.getElementById("menu-icon").src="images/home/close-menubar.svg";
-      
+    if (openMenu == true) {
+      document.getElementById("menu-icon").src = "images/home/close-menubar.svg";
+
     }
-    else{
-      setTimeout(function() {
-        if (page == 'contact.html'){
-          document.getElementById("menu-icon").src="images/home/menu-bar-contact.png";
+    else {
+      setTimeout(function () {
+        if (page == 'contact.html') {
+          document.getElementById("menu-icon").src = "images/home/menu-bar-contact.png";
         }
-        else{ 
-          document.getElementById("menu-icon").src="images/home/menu-bar.svg";  
+        else {
+          document.getElementById("menu-icon").src = "images/home/menu-bar.svg";
         }
       }, 300);
     }
@@ -130,27 +133,27 @@ function toogleMenu() {
       menu.classList.remove('set-width')
       menuButton.classList.remove('toggle')
       openMenu = false;
-      document.getElementById("menu-icon").src="images/home/menu-bar.svg";
+      document.getElementById("menu-icon").src = "images/home/menu-bar.svg";
     }
   })
 }
 toogleMenu();
 function stickyMenu() {
   let scrollTrigger = 60;
-  window.onscroll = function() {
+  window.onscroll = function () {
     // We add pageYOffset for compatibility with IE.
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-      if (page == 'contact.html'){
+      if (page == 'contact.html') {
         document.getElementById("header").classList.add('sticky-menu-contact');
       }
-      else{
+      else {
         document.getElementById("header").classList.add('sticky-menu');
       }
     } else {
       document.getElementById("header").classList.remove('sticky-menu');
       document.getElementById("header").classList.remove('sticky-menu-contact');
     }
-};
+  };
 }
 stickyMenu()
 
