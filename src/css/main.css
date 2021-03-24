@@ -1293,6 +1293,9 @@ img {
     .service .custom-order-1 {
       order: 1; } }
 
+.w-420 {
+  width: 420px !important; }
+
 .about {
   background-image: url("../images/about/AboutUs.png");
   height: 100%; }
