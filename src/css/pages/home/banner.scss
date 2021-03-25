@@ -1,5 +1,6 @@
 .home-banner {
-    height: 90vh;
+    height: 100vh;
+    background-size: cover;
     background-image: url(../images/home/bg-new.png);
     @media screen and(max-width:768px) {
         background-image: url(../images/home/Home-respon.svg);
@@ -13,9 +14,11 @@
             width: 292px;
             height: 320px;
         }
-        width: 905px;
+        width: 795px;
         height: 320px;
         object-fit: contain;
+        margin-left: -300px;
+        margin-top: -125px;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
