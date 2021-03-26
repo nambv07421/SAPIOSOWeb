@@ -40,7 +40,7 @@ img {
       font-size: 35px; } }
 
 .header {
-  background-color: #733528;
+  background-color: #5b2b12;
   width: 100%;
   left: 0;
   top: 0;
@@ -589,7 +589,7 @@ img {
       font-size: 35px; } }
 
 .header {
-  background-color: #733528;
+  background-color: #5b2b12;
   width: 100%;
   left: 0;
   top: 0;
@@ -1543,4 +1543,5 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
