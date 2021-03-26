@@ -12,11 +12,10 @@ let page = arr[arr.length - 1];
     controlArrows: false,
 
 
-    onLeave: function(origin, destination, direction){
-        console.log("Leaving section" + origin);
+    onLeave: function(origin, destination, direction,){
         if (page = "porfolio.html"){
           document.getElementById("header").classList.add('sticky-menu-contact');
-          if(origin == 2){
+          if(destination == 1){
             document.getElementById("header").classList.remove('sticky-menu-contact');
           }
         }
