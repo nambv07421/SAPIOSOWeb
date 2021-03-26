@@ -12,12 +12,15 @@ let page = arr[arr.length - 1];
     controlArrows: false,
 
 
-    onLeave: function (origin, destination, direction) {
-      console.log("Leaving section" + origin);
-      if (page = "porfolio.html") {
-        document.getElementById("header").classList.add('sticky');
-        if (origin == 2) {
-          document.getElementById("header").classList.remove('sticky-menu-contact');
+    onLeave: function (origin, destination, direction,) {
+
+      if (page == "porfolio.html") {
+
+        document.getElementById("header").classList.add('sticky-portflio');
+        if (destination == 1) {
+          document.getElementById("header").classList.remove('sticky-portflio');
+
+
         }
       }
 
@@ -48,6 +51,7 @@ function menuDot() {
   }
   else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'porfolio.html') {
     document.getElementById("porfolio-icon").classList.add('menu-dot', 'item-active')

@@ -1,4 +1,5 @@
-
+let arr = window.location.href.split('/');
+let page = arr[arr.length - 1];
 (function ($) {
 
   "use strict";
@@ -11,22 +12,19 @@
     controlArrows: false,
 
 
+    onLeave: function (origin, destination, direction,) {
 
-    onSlideLeave: function (anchorLink, index, slideIndex, direction) {
-      if (anchorLink == 'fifthSection' && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(true, 'up');
-        $header_top.css('background', 'rgba(0, 47, 77, .3)');
-        $nav.css('background', 'rgba(0, 47, 77, .25)');
-      }
-      if (index == 1) {
-        $('.header').addClass('sticky-menu-contact');
-      }
-      //back to the 1st section
-      if (nextIndex == 1) {
-        $('.header').removeClass('fixed');
-      }
-    }
+      if (page == "porfolio.html") {
 
+        document.getElementById("header").classList.add('sticky-portflio');
+        if (destination == 1) {
+          document.getElementById("header").classList.remove('sticky-portflio');
+
+
+        }
+      }
+
+    },
   });
   $(".product-img").tilt({
     maxTilt: 15,
@@ -39,8 +37,7 @@
   });
 
 }(jQuery));
-let arr = window.location.href.split('/');
-let page = arr[arr.length - 1];
+
 function menuDot() {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
@@ -54,9 +51,11 @@ function menuDot() {
   }
   else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'porfolio.html') {
     document.getElementById("porfolio-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot', 'item-active')
@@ -168,15 +167,16 @@ function toogleMenu() {
 }
 toogleMenu();
 function stickyMenu() {
-  let scrollTrigger = 60;
+  let scrollTrigger = 10;
   window.onscroll = function () {
     // We add pageYOffset for compatibility with IE.
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-      console.log(window.scrollY, window.pageYOffset);
-      if (page == 'porfolio.html') {
+      if (page == 'contact.html' || page == 'about.html' || page == 'service.html' || page == 'porfolio.html' || page == 'index.html') {
+        console.log('123');
         document.getElementById("header").classList.add('sticky-menu-contact');
       }
       else {
+        console.log('123');
         document.getElementById("header").classList.add('sticky-menu');
       }
     } else {

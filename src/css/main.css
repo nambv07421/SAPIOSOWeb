@@ -468,13 +468,13 @@ img {
         display: none; } }
 
 .sticky-menu {
-  background-color: #7a0000; }
+  background-color: #5b2b12; }
 
 .sticky-menu-contact {
-  background-color: #7a0000; }
+  background-color: #5b2b12; }
 
-.sticky {
-  background-color: #7a0000;
+.sticky-portflio {
+  background-color: #5b2b12;
   height: 10vh; }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
@@ -1020,13 +1020,13 @@ img {
         display: none; } }
 
 .sticky-menu {
-  background-color: #7a0000; }
+  background-color: #5b2b12; }
 
 .sticky-menu-contact {
-  background-color: #7a0000; }
+  background-color: #5b2b12; }
 
-.sticky {
-  background-color: #7a0000;
+.sticky-portflio {
+  background-color: #5b2b12;
   height: 10vh; }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
@@ -1337,6 +1337,9 @@ img {
 #fp-nav {
   display: none !important; }
 
+.fullpage-wrapper {
+  z-index: -1; }
+
 .about {
   background-image: url("../images/about/AboutUs.png");
   height: 100%; }
@@ -1377,6 +1380,9 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh; }
+    @media screen and (width: 1280px) {
+      .about .about-item-bg .box {
+        height: 520px; } }
     @media screen and (max-width: 768px) and (min-width: 576px) {
       .about .about-item-bg {
         height: 60vh; } }
@@ -1486,6 +1492,14 @@ img {
     justify-content: center;
     align-items: center;
     background-size: cover; }
+    @media screen and (width: 1366px) {
+      .contact .container-custom-contact {
+        width: 90% !important;
+        height: 498px; } }
+    @media screen and (width: 1280px) {
+      .contact .container-custom-contact {
+        width: 97% !important;
+        height: 504px; } }
     @media screen and (max-width: 576px) and (min-width: 320px) {
       .contact .container-custom-contact {
         background-image: unset; } }
@@ -1551,3 +1565,8 @@ img {
   align-items: center;
   background-size: cover;
   background-position: center; }
+
+.img-digital {
+  width: 570px;
+  height: 442px;
+  border-radius: 50px; }
