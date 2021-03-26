@@ -2,7 +2,23 @@
 (function ($) {
 
   "use strict";
+  // fullpage customization
+  $('#fullpage').fullpage({
+    sectionSelector: '.service-scroll',
+    slideSelector: '.container-custom',
+    navigation: true,
+    slidesNavigation: true,
+    controlArrows: false,
 
+
+    onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+      if (anchorLink == 'fifthSection' && slideIndex == 1) {
+        $.fn.fullpage.setAllowScrolling(true, 'up');
+        $header_top.css('background', 'rgba(0, 47, 77, .3)');
+        $nav.css('background', 'rgba(0, 47, 77, .25)');
+      }
+    }
+  });
   $(".product-img").tilt({
     maxTilt: 15,
     perspective: 1400,
@@ -19,6 +35,9 @@ let page = arr[arr.length - 1];
 function menuDot() {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
+    document.getElementById("header-fixed").classList.add('header-fixed')
+  }
+  else if (page == '') {
     document.getElementById("header-fixed").classList.add('header-fixed')
   }
   else if (page == 'service.html') {
@@ -145,7 +164,7 @@ function stickyMenu() {
   window.onscroll = function () {
     // We add pageYOffset for compatibility with IE.
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-      if (page == 'contact.html') {
+      if (page == 'contact.html' || page == 'about.html' || page == 'service.html' || page == 'porfolio.html' || page == 'index.html') {
         document.getElementById("header").classList.add('sticky-menu-contact');
       }
       else {
@@ -156,7 +175,10 @@ function stickyMenu() {
       document.getElementById("header").classList.remove('sticky-menu-contact');
     }
   };
+
+
+
+
 }
 stickyMenu()
-
 

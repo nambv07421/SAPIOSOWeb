@@ -4,6 +4,8 @@
     left: 0;
     top: 0;
     z-index: 999;
+    display: flex;
+    justify-content: center;
     @media screen and(max-width:768px) and (min-width: 320px) {
         background-color: transparent;
         z-index: 999;
@@ -14,6 +16,7 @@
         justify-content: space-between;
         height: 10vh;
         align-items: center;
+        z-index: 1;
         .header__menu {
             .menu-logo {
                 display: none;
@@ -540,6 +543,13 @@
             }
         }
     }
+}
+.sticky-menu {
+    background-color: #7a0000;
+}
+.sticky-menu-contact {
+    background-color: #7a0000;
+    position: fixed;
 }
 @media screen and(max-width:768px) and (min-width: 320px) {
     .menu-big {

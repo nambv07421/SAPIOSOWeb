@@ -21,6 +21,9 @@ function menuDot() {
     document.getElementById("home-icon").classList.add('menu-dot', 'item-active')
     document.getElementById("header-fixed").classList.add('header-fixed')
   }
+  else if (page == '') {
+    document.getElementById("header-fixed").classList.add('header-fixed')
+  }
   else if (page == 'service.html') {
     document.getElementById("service-icon").classList.add('menu-dot', 'item-active')
   }

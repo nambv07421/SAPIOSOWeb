@@ -44,7 +44,9 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  display: flex;
+  justify-content: center; }
   @media screen and (max-width: 768px) and (min-width: 320px) {
     .header {
       background-color: transparent;
@@ -54,7 +56,8 @@ img {
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    align-items: center; }
+    align-items: center;
+    z-index: 1; }
     .header .container-fluid .header__menu .menu-logo {
       display: none; }
     .header .container-fluid .header__menu-list {
@@ -463,6 +466,13 @@ img {
         top: -7px; }
       .header .container-fluid .header__language {
         display: none; } }
+
+.sticky-menu {
+  background-color: #7a0000; }
+
+.sticky-menu-contact {
+  background-color: #7a0000;
+  position: fixed; }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .menu-big {
@@ -583,7 +593,9 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  display: flex;
+  justify-content: center; }
   @media screen and (max-width: 768px) and (min-width: 320px) {
     .header {
       background-color: transparent;
@@ -593,7 +605,8 @@ img {
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    align-items: center; }
+    align-items: center;
+    z-index: 1; }
     .header .container-fluid .header__menu .menu-logo {
       display: none; }
     .header .container-fluid .header__menu-list {
@@ -1003,6 +1016,13 @@ img {
       .header .container-fluid .header__language {
         display: none; } }
 
+.sticky-menu {
+  background-color: #7a0000; }
+
+.sticky-menu-contact {
+  background-color: #7a0000;
+  position: fixed; }
+
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .menu-big {
     display: none; }
@@ -1096,7 +1116,9 @@ img {
     @media screen and (max-width: 375px) {
       .home-banner img {
         width: 292px;
-        height: 320px; } }
+        height: 320px;
+        margin-left: 0px;
+        margin-top: 0px; } }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .home-banner {
@@ -1124,7 +1146,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     @media screen and (max-width: 768px) and (min-width: 320px) {
       .service .service-banner {
         background-image: url(../images/home/Home-respon.svg);
@@ -1235,11 +1258,12 @@ img {
         padding: 40px 0;
         background-color: white; } }
     .service .service-item .container-custom {
-      max-width: 80% !important; }
+      max-width: 100% !important; }
     .service .service-item .service-item-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 80vh;
       margin-left: 80px; }
       @media screen and (max-width: 1919px) and (min-width: 1280px) {
@@ -1300,6 +1324,12 @@ img {
 
 .w-420 {
   width: 420px !important; }
+  @media screen and (max-width: 576px) and (min-width: 320px) {
+    .w-420 {
+      width: 229px !important; } }
+
+#fp-nav {
+  display: none !important; }
 
 .about {
   background-image: url("../images/about/AboutUs.png");
@@ -1310,6 +1340,7 @@ img {
       background-position: center;
       background-size: cover; } }
   .about .about-item {
+    background-image: url("../images/about/AboutUs.png");
     height: 100vh;
     width: 100%;
     background-size: cover; }
@@ -1317,6 +1348,7 @@ img {
       .about .about-item {
         height: 60vh; } }
   .about .about-item1 {
+    background-image: url("../images/about/AboutUs.png");
     height: 100vh;
     width: 100%;
     background-size: cover; }
@@ -1324,6 +1356,7 @@ img {
       .about .about-item1 {
         height: 60vh; } }
   .about .about-item2 {
+    background-image: url("../images/about/AboutUs.png");
     height: 100vh;
     width: 100%;
     background-size: cover; }
@@ -1425,8 +1458,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #733528;
-  box-shadow: 1px 0 15px 2px #000; }
+  background-color: #733528; }
   @media screen and (max-width: 576px) and (min-width: 320px) {
     .contact {
       background: #ffffff; } }
@@ -1506,7 +1538,7 @@ img {
       display: none; } }
 
 .porfolio-banner {
-  background-image: url(../images/service/portfolio.png);
+  background-image: url(../images/service/15.png);
   height: 100vh;
   display: flex;
   justify-content: center;
