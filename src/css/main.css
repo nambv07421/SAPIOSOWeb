@@ -471,8 +471,11 @@ img {
   background-color: #7a0000; }
 
 .sticky-menu-contact {
+  background-color: #7a0000; }
+
+.sticky {
   background-color: #7a0000;
-  position: fixed; }
+  height: 10vh; }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .menu-big {
@@ -1020,8 +1023,11 @@ img {
   background-color: #7a0000; }
 
 .sticky-menu-contact {
+  background-color: #7a0000; }
+
+.sticky {
   background-color: #7a0000;
-  position: fixed; }
+  height: 10vh; }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .menu-big {
