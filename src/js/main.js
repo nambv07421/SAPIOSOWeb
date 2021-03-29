@@ -3,29 +3,35 @@ let page = arr[arr.length - 1];
 (function ($) {
 
   "use strict";
-  // fullpage customization
-  $('#fullpage').fullpage({
-    sectionSelector: '.service-scroll',
-    slideSelector: '.container-custom',
-    navigation: true,
-    slidesNavigation: true,
-    controlArrows: false,
 
 
-    onLeave: function (origin, destination, direction,) {
+  const mediaQuery = window.matchMedia('(min-width: 1280px)')
+  // Check if the media query is true
+  if (mediaQuery.matches) {
+    // fullpage customization
+    $('#fullpage').fullpage({
+      sectionSelector: '.service-scroll',
+      slideSelector: '.container-custom',
+      navigation: true,
+      slidesNavigation: true,
+      controlArrows: false,
 
-      if (page == "porfolio.html") {
 
-        document.getElementById("header").classList.add('sticky-portflio');
-        if (destination == 1) {
-          document.getElementById("header").classList.remove('sticky-portflio');
+      onLeave: function (origin, destination, direction,) {
+
+        if (page == "porfolio.html") {
+
+          document.getElementById("header").classList.add('sticky-portflio');
+          if (destination == 1) {
+            document.getElementById("header").classList.remove('sticky-portflio');
 
 
+          }
         }
-      }
 
-    },
-  });
+      },
+    });
+  }
   $(".product-img").tilt({
     maxTilt: 15,
     perspective: 1400,
@@ -166,28 +172,35 @@ function toogleMenu() {
   })
 }
 toogleMenu();
-function stickyMenu() {
-  let scrollTrigger = 10;
-  window.onscroll = function () {
-    // We add pageYOffset for compatibility with IE.
-    if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-      if (page == 'contact.html' || page == 'about.html' || page == 'service.html' || page == 'porfolio.html' || page == 'index.html') {
-        console.log('123');
-        document.getElementById("header").classList.add('sticky-menu-contact');
+const mediaQuery = window.matchMedia('(max-width: 768px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  function stickyMenu() {
+    let scrollTrigger = 10;
+    window.onscroll = function () {
+      // We add pageYOffset for compatibility with IE.
+      if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+        if (page == 'about.html' || page == 'service.html' || page == 'porfolio.html' || page == 'index.html') {
+          console.log('123');
+          document.getElementById("header").classList.add('sticky-menu-contact');
+        } else if (page == 'contact.html') {
+          document.getElementById("header").classList.add('sticky-menu-ct');
+        }
+        else {
+          console.log('123');
+          document.getElementById("header").classList.add('sticky-menu');
+        }
+      } else {
+        document.getElementById("header").classList.remove('sticky-menu');
+        document.getElementById("header").classList.remove('sticky-menu-contact');
       }
-      else {
-        console.log('123');
-        document.getElementById("header").classList.add('sticky-menu');
-      }
-    } else {
-      document.getElementById("header").classList.remove('sticky-menu');
-      document.getElementById("header").classList.remove('sticky-menu-contact');
-    }
-  };
+    };
 
 
 
 
+  }
+  stickyMenu()
 }
-stickyMenu()
+
 

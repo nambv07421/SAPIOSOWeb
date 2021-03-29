@@ -17,6 +17,7 @@
         height: 10vh;
         align-items: center;
         z-index: 1;
+
         .header__menu {
             .menu-logo {
                 display: none;
@@ -568,7 +569,11 @@
         background-color: #7a0000;
     }
     .sticky-menu-contact {
-        background-color: white;
+        background-color: #7a0000;
+        height: 10vh;
+    }
+    .sticky-menu-ct {
+        background-color: #fff;
     }
 }
 @media screen and(min-width:769px) {

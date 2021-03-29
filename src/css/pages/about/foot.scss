@@ -14,6 +14,11 @@
         @media screen and(max-width: 768px) and (min-width: 576px) {
             height: 60vh;
         }
+        @media screen and(max-width: 768px) and (min-width: 320px) {
+            background-image: url(../images/home/Home-respon.svg);
+            background-position: center;
+            background-size: cover;
+        }
     }
     .about-item1 {
         background-image: url("../images/about/AboutUs.png");
@@ -22,6 +27,11 @@
         background-size: cover;
         @media screen and(max-width: 768px) and (min-width: 576px) {
             height: 60vh;
+        }
+        @media screen and(max-width: 768px) and (min-width: 320px) {
+            background-image: url(../images/home/Home-respon.svg);
+            background-position: center;
+            background-size: cover;
         }
     }
     .about-item2 {
@@ -35,6 +45,11 @@
         @media screen and(max-height: 736px) {
             height: unset;
         }
+        @media screen and(max-width: 768px) and (min-width: 320px) {
+            background-image: url(../images/home/Home-respon.svg);
+            background-position: center;
+            background-size: cover;
+        }
     }
     .about-item-bg {
         display: flex;
@@ -43,6 +58,9 @@
         height: 100vh;
         .box {
             @media screen and(width:1280px) {
+                height: 450px;
+            }
+            @media screen and(width:1366px) {
                 height: 520px;
             }
         }
@@ -96,6 +114,14 @@
                     font-size: 24px;
                     color: #808080;
                     line-height: 45px;
+                    @media screen and(width:1280px) {
+                        display: block;
+                        margin-left: 67px;
+                        font-size: 16px;
+                        line-height: 35px;
+                        text-align: start;
+                        width: 374px;
+                    }
                     @media screen and(max-width:1024px) {
                         font-size: 16px;
                         margin: 0;
@@ -110,7 +136,6 @@
                     }
                 }
                 img {
-                    margin-left: 90px;
                     @media screen and(max-width:768px) {
                         margin-left: 0;
                     }

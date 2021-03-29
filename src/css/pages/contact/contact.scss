@@ -7,10 +7,7 @@
     @media screen and(max-width:576px) and (min-width: 320px) {
         background: #ffffff;
     }
-    @media screen and(max-height: 700px) {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
+
     .contact-bg {
         display: none;
         position: absolute;
@@ -31,8 +28,8 @@
             height: 498px;
         }
         @media screen and(width:1280px) {
-            width: 97% !important;
-            height: 504px;
+            width: 88% !important;
+            height: 456px;
         }
 
         @media screen and(max-width:576px) and (min-width: 320px) {
@@ -53,6 +50,17 @@
                 width: 98px;
                 height: 28px;
                 margin-left: 0;
+                display: none;
+            }
+        }
+        .title-mobi {
+            margin-bottom: 57px;
+            img {
+                width: 98px;
+                height: 28px;
+                @media screen and(max-width:576px) and (min-width: 320px) {
+                    display: block;
+                }
             }
         }
         .contact-map-mobile {
@@ -89,21 +97,50 @@
                         width: 20px;
                         height: 20px;
                         margin-right: 20px;
+                        .footer__item-image-mobi {
+                            display: block;
+                        }
+                        .footer__item-image {
+                            display: none;
+                        }
                     }
                 }
                 p {
                     font-size: 21px;
                     color: #733528;
                     @media screen and(max-width:576px) and (min-width: 320px) {
-                        font-size: 12px;
+                        font-size: 13px;
                         font-family: "Open Sans";
                         line-height: 24px;
+                        color: #fff;
+                        font-weight: 600;
                     }
                 }
             }
         }
     }
+    @media screen and(max-width:576px) and (min-width: 320px) {
+        .footer__item-image-mobi {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+        .footer__item-image {
+            display: none;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+    }
     .contact-map {
+        img {
+            width: 420px;
+            @media screen and (width: 1280px) {
+                width: 450px;
+            }
+        }
+
         @media screen and(max-width:576px) and (min-width: 320px) {
             display: none;
         }

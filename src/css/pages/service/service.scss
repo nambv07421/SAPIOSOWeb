@@ -13,22 +13,20 @@
             background-image: url(../images/home/Home-respon.svg);
             // background-position: center;
             flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         img {
             width: 675px;
             position: relative;
-            @media screen and(max-width:1919px) and (min-width: 1280px) {
-                width: 550px;
-            }
+            display: none;
+
             @media screen and(max-width:576px) and (min-width: 320px) {
                 height: 291px;
                 width: 291px;
                 margin-bottom: 40px;
-            }
-            @media screen and(max-width:1024px) and (min-width: 576px) {
-                height: 400px;
-                width: 400px;
-                margin-bottom: 40px;
+                display: block;
             }
         }
         .service-button {
@@ -37,6 +35,10 @@
             display: flex;
             margin-top: 320px;
             margin-left: 670px;
+            display: none;
+            @media screen and(max-width:576px) and (min-width: 320px) {
+                display: block;
+            }
             button {
                 outline: none;
             }
@@ -69,16 +71,6 @@
                     letter-spacing: 10px;
                     padding-left: 20px;
                 }
-                @media screen and(max-width:1024px) and (min-width: 576px) {
-                    height: 80px;
-                    width: 350px;
-                    font-size: 48px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    letter-spacing: 20px;
-                    padding-left: 40px;
-                }
             }
             .button-2 {
                 width: 360px;
@@ -100,16 +92,6 @@
                     align-items: center;
                     letter-spacing: 5px;
                     padding-left: 20px;
-                }
-                @media screen and(max-width:1024px) and (min-width: 576px) {
-                    height: 80px;
-                    width: 350px;
-                    font-size: 28px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    letter-spacing: 20px;
-                    padding-left: 40px;
                 }
             }
         }
