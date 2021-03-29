@@ -110,6 +110,8 @@
         }
         .container-custom {
             max-width: 100% !important;
+            display: flex;
+            flex-direction: column;
         }
         .service-item-text {
             display: flex;

@@ -488,7 +488,10 @@ img {
     background-color: #7a0000; }
   .sticky-menu-contact {
     background-color: #7a0000;
-    height: 10vh; }
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .sticky-menu-ct {
     background-color: #fff; } }
 
@@ -1043,7 +1046,10 @@ img {
     background-color: #7a0000; }
   .sticky-menu-contact {
     background-color: #7a0000;
-    height: 10vh; }
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .sticky-menu-ct {
     background-color: #fff; } }
 
@@ -1251,7 +1257,9 @@ img {
         padding: 40px 0;
         background-color: white; } }
     .service .service-item .container-custom {
-      max-width: 100% !important; }
+      max-width: 100% !important;
+      display: flex;
+      flex-direction: column; }
     .service .service-item .service-item-text {
       display: flex;
       flex-direction: column;

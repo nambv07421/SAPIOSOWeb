@@ -550,6 +550,7 @@
 }
 .sticky-menu-contact {
     background-color: #5b2b12;
+
     // position: fixed;
 }
 .sticky-portflio {
@@ -571,6 +572,9 @@
     .sticky-menu-contact {
         background-color: #7a0000;
         height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .sticky-menu-ct {
         background-color: #fff;

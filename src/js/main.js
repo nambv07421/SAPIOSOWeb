@@ -195,10 +195,6 @@ if (mediaQuery.matches) {
         document.getElementById("header").classList.remove('sticky-menu-contact');
       }
     };
-
-
-
-
   }
   stickyMenu()
 }
