@@ -9,6 +9,12 @@
 }
 .img-digital {
     width: 570px;
-    height: 442px;
+    height: 612px;
     border-radius: 50px;
+}
+.row-custum {
+    display: flex;
+    @media screen and(max-width: 576px) and (min-width: 320px) {
+        flex-direction: column;
+    }
 }

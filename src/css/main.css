@@ -1131,7 +1131,7 @@ img {
     object-fit: contain;
     margin-left: -300px;
     margin-top: -125px; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 520px) {
       .home-banner img {
         width: 292px;
         height: 320px;
@@ -1177,7 +1177,7 @@ img {
       width: 675px;
       position: relative;
       display: none; }
-      @media screen and (max-width: 576px) and (min-width: 320px) {
+      @media screen and (max-width: 768px) and (min-width: 320px) {
         .service .service-banner img {
           height: 291px;
           width: 291px;
@@ -1190,16 +1190,20 @@ img {
       margin-top: 320px;
       margin-left: 670px;
       display: none; }
-      @media screen and (max-width: 576px) and (min-width: 320px) {
+      @media screen and (max-width: 768px) and (min-width: 320px) {
         .service .service-banner .service-button {
           display: block; } }
+      @media screen and (width: 768px) {
+        .service .service-banner .service-button {
+          margin-top: 174px;
+          margin-left: 356px; } }
       .service .service-banner .service-button button {
         outline: none; }
-      @media screen and (max-width: 1024px) {
+      @media screen and (width: 1024px) {
         .service .service-banner .service-button {
           margin-top: 220px;
           margin-left: 525px; } }
-      @media screen and (max-width: 768px) and (min-width: 320px) {
+      @media screen and (max-width: 520px) and (min-width: 320px) {
         .service .service-banner .service-button {
           margin: 0;
           position: unset; } }
@@ -1213,7 +1217,7 @@ img {
         color: #fff;
         letter-spacing: 22px;
         font-weight: 300; }
-        @media screen and (max-width: 576px) and (min-width: 320px) {
+        @media screen and (max-width: 768px) and (min-width: 320px) {
           .service .service-banner .service-button .button-1 {
             height: 50px;
             width: 198px;
@@ -1234,7 +1238,7 @@ img {
         letter-spacing: 22px;
         font-weight: 300;
         margin-top: 15px; }
-        @media screen and (max-width: 576px) and (min-width: 320px) {
+        @media screen and (max-width: 768px) and (min-width: 320px) {
           .service .service-banner .service-button .button-2 {
             height: 50px;
             width: 198px;
@@ -1257,9 +1261,11 @@ img {
         padding: 40px 0;
         background-color: white; } }
     .service .service-item .container-custom {
-      max-width: 100% !important;
-      display: flex;
-      flex-direction: column; }
+      max-width: 100% !important; }
+      @media screen and (max-width: 520px) and (min-width: 320px) {
+        .service .service-item .container-custom {
+          flex-direction: column;
+          display: flex; } }
     .service .service-item .service-item-text {
       display: flex;
       flex-direction: column;
@@ -1280,7 +1286,7 @@ img {
         @media screen and (max-width: 768px) and (min-width: 320px) {
           .service .service-item .service-item-text img {
             width: 188px;
-            height: 60px;
+            height: 82px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1400,7 +1406,8 @@ img {
       .about .about-item-bg {
         height: 60vh; } }
     .about .about-item-bg .box-mobile {
-      display: none; }
+      display: none;
+      height: 82%; }
     @media screen and (max-width: 576px) and (min-width: 320px) {
       .about .about-item-bg {
         width: 100%;
@@ -1472,7 +1479,7 @@ img {
             height: 183px;
             margin: 0;
             position: absolute;
-            margin-bottom: 100px; } }
+            margin-bottom: 190px; } }
       @media screen and (max-width: 576px) and (min-width: 320px) {
         .about .about-item-bg .about-content .content-text {
           position: relative;
@@ -1492,11 +1499,13 @@ img {
   background-color: #733528; }
   @media screen and (max-width: 576px) and (min-width: 320px) {
     .contact {
-      background: #ffffff; } }
+      background: #ffffff;
+      margin-top: 70px;
+      margin-bottom: 50px; } }
   .contact .contact-bg {
     display: none;
     position: absolute; }
-    @media screen and (max-width: 576px) and (min-width: 320px) {
+    @media screen and (max-width: 520px) and (min-width: 320px) {
       .contact .contact-bg {
         display: block; } }
   .contact .container-custom-contact {
@@ -1507,6 +1516,10 @@ img {
     justify-content: center;
     align-items: center;
     background-size: cover; }
+    @media screen and (width: 1440px) {
+      .contact .container-custom-contact {
+        width: 90% !important;
+        height: 525px; } }
     @media screen and (width: 1366px) {
       .contact .container-custom-contact {
         width: 90% !important;
@@ -1515,7 +1528,7 @@ img {
       .contact .container-custom-contact {
         width: 88% !important;
         height: 456px; } }
-    @media screen and (max-width: 576px) and (min-width: 320px) {
+    @media screen and (max-width: 520px) and (min-width: 320px) {
       .contact .container-custom-contact {
         background-image: unset; } }
     @media screen and (max-width: 768px) and (min-width: 576px) {
@@ -1614,5 +1627,11 @@ img {
 
 .img-digital {
   width: 570px;
-  height: 442px;
+  height: 612px;
   border-radius: 50px; }
+
+.row-custum {
+  display: flex; }
+  @media screen and (max-width: 576px) and (min-width: 320px) {
+    .row-custum {
+      flex-direction: column; } }

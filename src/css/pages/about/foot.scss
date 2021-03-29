@@ -69,6 +69,7 @@
         }
         .box-mobile {
             display: none;
+            height: 82%;
         }
         @media screen and(max-width:576px) and (min-width: 320px) {
             width: 100%;
@@ -144,7 +145,7 @@
                         height: 183px;
                         margin: 0;
                         position: absolute;
-                        margin-bottom: 100px;
+                        margin-bottom: 190px;
                     }
                 }
             }
